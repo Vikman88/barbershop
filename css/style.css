@@ -352,3 +352,111 @@ a {
 .restore:focus {
   text-decoration: none;
 }
+
+.main-header {
+  margin-bottom: 75px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header-logo {
+  order: 2;
+  width: 368px;
+  height: 153px;
+}
+
+.site-navigation {
+  width: 620px;
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+  background-color: #000000;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-item {
+  width: 300px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 35px;
+}
+
+.news {
+  width: 380px;
+}
+
+.gallery {
+  width: 300px;
+}
+
+.contacts {
+  width: 380px;
+}
+
+.appointment {
+  width: 300px;
+}
+
+.main-footer {
+  padding: 60px 0;
+  margin-top: 65px;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 320px;
+  margin: 0;
+  margin-right: 80px;
+}
+
+.footer-social {
+  width: 145px;
+}
+
+.footer-copyright {
+  width: 150px;
+  margin: 0;
+  margin-left: auto;
+}
