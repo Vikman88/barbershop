@@ -28,7 +28,7 @@
             <ul class="site-navigation">
               <li><a href="#">Информация</a></li>
               <li><a href="#">Новости</a></li>
-              <li><a href="#">Прайс-лист</a></li>
+              <li><a href="price-list.html">Прайс-лист</a></li>
               <li><a href="catalog.html">Магазин</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
@@ -260,35 +260,52 @@
     </footer>
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
+      <p class="modal-description">Введите пожалуйста свой логин и пароль.</p>
       <form
         class="login-form"
         action="https://echo.htmlacademy.ru"
         method="POST"
       >
         <p>
-          <label class="visually-hidden" for="login">Логин</label>
-          <input type="text" name="login" id="login" placeholder="Логин" />
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input
+            class="login-icon-user"
+            type="text"
+            name="login"
+            id="user-login"
+            placeholder="Логин"
+          />
         </p>
         <p>
-          <label class="visually-hidden" for="password">Пароль</label>
+          <label class="visually-hidden" for="user-password">Пароль</label>
           <input
+            class="login-icon-password"
             type="password"
             name="password"
-            id="password"
+            id="user-password"
             placeholder="Пароль"
           />
         </p>
         <p class="login-checkbox">
-          <input type="checkbox" name="remember" id="remember" />
-          <label for="remember">Запомните меня</label>
+          <label class="login-description-checkbox" for="remember">
+            <input
+              type="checkbox"
+              name="remember"
+              id="remember"
+              class="visually-hidden"
+            />
+            <span class="checkbox-indicator"></span>
+            Запомните меня</label
+          >
+          <a href="#" class="restore">Я забыл пароль</a>
         </p>
-        <p><a href="#" class="restore">Я забыл пароль</a></p>
         <button type="submit" class="button">Войти</button>
       </form>
-      <button type="button">Закрыть</button>
+      <button type="button" class="modal-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
-    <section>
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
         <img
@@ -298,7 +315,9 @@
           alt="Офис по адресу такому-то"
         />
       </p>
-      <button type="button">Закрыть</button>
+      <button type="button" class="modal-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
   </body>
 </html>
