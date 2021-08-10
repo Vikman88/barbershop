@@ -27,10 +27,10 @@
           <div class="container">
             <ul class="site-navigation">
               <li><a href="#">Информация</a></li>
-              <li><a href="#">Новости</a></li>
+              <li><a href="#news">Новости</a></li>
               <li><a href="price-list.html">Прайс-лист</a></li>
               <li><a href="catalog.html">Магазин</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#contact">Контакты</a></li>
             </ul>
             <ul class="user-navigation">
               <li><a class="login-link" href="login.html">Вход</a></li>
@@ -68,7 +68,7 @@
         </ul>
       </section>
       <div class="index-columns">
-        <section class="news">
+        <section class="news" id="news">
           <h2>Новости</h2>
           <ul class="news-list">
             <li class="news-item">
@@ -120,7 +120,7 @@
         </section>
       </div>
       <div class="index-columns">
-        <section class="contacts">
+        <section class="contacts" id="contact">
           <h2>Контактная информация</h2>
           <p>
             Барбершоп «Бородинский»<br />
@@ -132,7 +132,7 @@
             пн—пт: с 10:00 до 22:00<br />
             сб—вс: с 10:00 до 19:00
           </p>
-          <a href="#" class="button">Как проехать</a>
+          <a href="#" class="button link-map">Как проехать</a>
           <a href="#" class="button">Обратная связь</a>
         </section>
         <section class="appointment">
@@ -196,7 +196,7 @@
         <p class="footer-contacts">
           Барбершоп «Бородинский»<br />
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br />
-          <a href="#">Как нас найти?</a><br />
+          <a href="#" class="link-map">Как нас найти?</a><br />
           Телефон: +7 (812) 666-02-66
         </p>
         <div class="footer-social">
@@ -319,5 +319,7 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
+    <div class="locker"></div>
+    <script src="./index.js"></script>
   </body>
 </html>

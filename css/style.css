@@ -1,3 +1,43 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -688,6 +728,22 @@ a {
   background-color: #ffffff;
 }
 
+.lockOn {
+  display: block;
+  visibility: visible;
+  position: fixed;
+  z-index: 990;
+  top: 0px;
+  left: 0px;
+  width: 105%;
+  height: 105%;
+  background-color: #ccc;
+  text-align: center;
+  padding-top: 20%;
+  filter: alpha(opacity=75);
+  opacity: 0.75;
+}
+
 .modal {
   position: fixed;
 
@@ -727,6 +783,16 @@ a {
   width: 300px;
   margin-left: -230px;
   padding: 50px 80px;
+}
+
+.modal-login-show {
+  display: block;
+  z-index: 999;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-login h2 {
@@ -773,7 +839,7 @@ a {
   width: 19px;
   height: 3px;
 
-  background-color: #d0d0d0;
+  background-color: black;
 }
 
 .modal-close::before {
