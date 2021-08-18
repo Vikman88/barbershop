@@ -1,0 +1,10 @@
+{
+  "name": "barbershop",
+  "version": "1.0.0",
+  "description": "barbershop-training-project",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "surge": "^0.23.0"
+  }
+}

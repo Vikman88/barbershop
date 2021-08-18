@@ -522,7 +522,7 @@ a {
   transform: rotate(45deg);
 }
 
-.catalog-item a {
+.catalog-item > a {
   display: flex;
   flex-direction: column;
   color: #000;
